@@ -181,7 +181,7 @@ nav #menu li a:hover {
 /*------------------hero section starts here-------------*/
 
 .hero-wrapper {
-    background-image: url('img/home.gif');
+    background-image: url('./img/home.gif');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
