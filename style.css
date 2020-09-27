@@ -181,7 +181,7 @@ nav #menu li a:hover {
 /*------------------hero section starts here-------------*/
 
 .hero-wrapper {
-    background-image: url('./img/home.gif');
+    background-image: url('img/home.gif');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -202,30 +202,67 @@ nav #menu li a:hover {
 /*-----------------hero section ends here----------------*/
 
 /*------------------about me section starts here----------*/
-.about-me-section {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(57deg,#00c6a7,#1e4d92);
+.about-section{
+    background: url(./img/pic.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
 }
-.about-container {
-    width: 80%;
-    height: 50vh;
-    background-color: black;
-    margin-left: 10%;
-    margin-right: 10%;
-    position: absolute;
-    margin-top: 10%;
-    border-radius: 25px;
-    opacity: 0.5;
-    font-size: 2.4vh;
-    font-family: 'Roboto Mono', monospace;
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
 }
-.about-container h4 {
-    text-align: center;
-    text-decoration: underline;
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
 }
-.about-container p {
-    height: 40vh;
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
 }
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+    color: black;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+
 
 
