@@ -203,7 +203,7 @@ nav #menu li a:hover {
 
 /*------------------about me section starts here----------*/
 .about-section{
-    background: url(./img/pic.jpg) no-repeat left;
+    background: url(img/pic.jpg) no-repeat left;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
