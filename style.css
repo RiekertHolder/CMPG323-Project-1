@@ -203,21 +203,22 @@ nav #menu li a:hover {
 
 /*------------------about me section starts here----------*/
 .about-section{
-    background: url(img/pic.jpg) no-repeat left;
+    background: url(./img/pic.jpg) no-repeat left;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
 }
 
-.inner-container{
+.inner-container-right{
     width: 55%;
     float: right;
     background-color: #fdfdfd;
     padding: 150px;
+    color: black;
 }
 
-.inner-container h1{
+.section-heading{
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 900;
@@ -240,7 +241,7 @@ nav #menu li a:hover {
 }
 
 @media screen and (max-width:1200px){
-    .inner-container{
+    .inner-container-right{
         padding: 80px;
     }
 }
@@ -250,7 +251,7 @@ nav #menu li a:hover {
         background-size: 100%;
         padding: 100px 40px;
     }
-    .inner-container{
+    .inner-container-right{
         width: 100%;
     }
 }
@@ -259,10 +260,67 @@ nav #menu li a:hover {
     .about-section{
         padding: 0;
     }
-    .inner-container{
+    .inner-container-right{
         padding: 60px;
+    }
+    
+}
+
+/*-------------------------------about me section ends here-------------*/
+
+
+
+/*-------------------------------skills section starts here-------------*/
+
+.skills-section {
+    background: url(./img/pic2.jpeg) no-repeat right;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.skills-web {
+    width: 55%;
+    float: left;
+    background-color: #fdfdfd;
+    padding: 80px;
+    color: black;
+    border-style: solid;
+}
+.skills-bar {
+    width: 90%;
+    background-color: rgba(70, 70, 73, 0.068);
+    margin-bottom: 20px;
+    height: 3.5vh;
+}
+.skills-html{height:3.5vh;width: 95%;background-color: rgb(70, 70, 219);}
+.skills-css{height:3.5vh;width: 91%;background-color: rgb(23, 138, 48);}
+.skills-js{height:3.5vh;width: 84%;background-color: rgb(204, 219, 70);}
+
+
+@media screen and (max-width:1200px){
+    .skills-web{
+        padding: 80px;
     }
 }
 
+@media screen and (max-width:1000px){
+    .skills-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .skills-web{
+        width: 100%;
+    }
+}
 
-
+@media screen and (max-width:600px){
+    .skills-section{
+        padding: 0;
+    }
+    .skills-web{
+        padding: 60px;
+    }
+    
+    
+}
