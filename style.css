@@ -275,27 +275,28 @@ nav #menu li a:hover {
 .skills-section {
     background: url(./img/pic2.jpeg) no-repeat right;
     background-size: 55%;
-    background-color: #fdfdfd;
+    background-color: rgb(1, 1, 1);
     overflow: hidden;
     padding: 100px 0;
 }
 .skills-web {
     width: 55%;
     float: left;
-    background-color: #fdfdfd;
+    background-color: rgb(1, 1, 1);;
     padding: 80px;
-    color: black;
-    border-style: solid;
+    color: white;
+    
 }
 .skills-bar {
     width: 90%;
-    background-color: rgba(70, 70, 73, 0.068);
+    background-color: rgba(255, 255, 255, 0.19);
     margin-bottom: 20px;
-    height: 3.5vh;
+    height: 1.5vh;
+    border-radius: 15px;
 }
-.skills-html{height:3.5vh;width: 95%;background-color: rgb(70, 70, 219);}
-.skills-css{height:3.5vh;width: 91%;background-color: rgb(23, 138, 48);}
-.skills-js{height:3.5vh;width: 84%;background-color: rgb(204, 219, 70);}
+.skills-html{height:1.5vh;width: 95%;background-color: rgb(70, 70, 219);border-radius: 15px;}
+.skills-css{height:1.5vh;width: 91%;background-color: rgb(23, 138, 48);border-radius: 15px;}
+.skills-js{height:1.5vh;width: 84%;background-color: rgb(204, 219, 70);border-radius: 15px;}
 
 
 @media screen and (max-width:1200px){
