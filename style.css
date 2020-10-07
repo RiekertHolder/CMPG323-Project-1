@@ -203,7 +203,7 @@ nav #menu li a:hover {
 
 /*------------------about me section starts here----------*/
 .about-section{
-    background: url(./img/pic.jpg) no-repeat left;
+    background: url(./img/pic.jpeg) no-repeat left;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
@@ -232,13 +232,6 @@ nav #menu li a:hover {
     margin-bottom: 40px;
 }
 
-.skills{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
-    color: black;
-}
 
 @media screen and (max-width:1200px){
     .inner-container-right{
@@ -269,13 +262,31 @@ nav #menu li a:hover {
 /*-------------------------------about me section ends here-------------*/
 
 
+/*-------------------------------education section-----------------------*/
+
+.education-section{
+    background: url(./img/education.jpeg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+#work{
+    font-size: 2.5em;
+}
+
+
+/*-------------------------------education section ends here-------------*/
+
+
 
 /*-------------------------------skills section starts here-------------*/
 
 .skills-section {
     background: url(./img/pic2.jpeg) no-repeat right;
     background-size: 55%;
-    background-color: rgb(1, 1, 1);
+    background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
 }
@@ -284,7 +295,7 @@ nav #menu li a:hover {
     float: left;
     background-color: rgb(1, 1, 1);;
     padding: 80px;
-    color: white;
+    color: rgb(221, 219, 219);
     
 }
 .skills-bar {
@@ -324,8 +335,8 @@ nav #menu li a:hover {
     }
     
     
+    
 }
 
 /*----------------------------education section----------------*/
 
-.
