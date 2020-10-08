@@ -139,42 +139,6 @@ nav #menu li a:hover {
     opacity: 1;
 }
 
-@media(max-width: 768px) {
-    #toggle {
-          visibility: visible;
-          opacity: 1;
-          margin-top: 6px;
-          margin-right: 4px;
-    }
-
-    nav #brand {
-          margin-left: 24px;
-    }
-
-    #menu a {
-          font-size: 20px;
-          font-weight: 300;
-    }
-
-    #resize li span {
-          font-weight: bolder;
-    }
-
-    nav #menu {
-          display: none;
-    }
-    
-}
-
-@media(min-width: 769px) {
-    #resize {
-          visibility: hidden !important;
-    }
-    .hero-text h3 {
-        font-size: 2.5vh;
-    }
-    
-}
 
 /*------------------nabvar styling ends here------------*/
 
@@ -222,6 +186,7 @@ nav #menu li a:hover {
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 900;
+    text-align: center;
 }
 
 .text{
@@ -230,33 +195,6 @@ nav #menu li a:hover {
     line-height: 30px;
     text-align: justify;
     margin-bottom: 40px;
-}
-
-
-@media screen and (max-width:1200px){
-    .inner-container-right{
-        padding: 80px;
-    }
-}
-
-@media screen and (max-width:1000px){
-    .about-section{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    .inner-container-right{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .about-section{
-        padding: 0;
-    }
-    .inner-container-right{
-        padding: 60px;
-    }
-    
 }
 
 /*-------------------------------about me section ends here-------------*/
@@ -284,7 +222,7 @@ nav #menu li a:hover {
 /*-------------------------------skills section starts here-------------*/
 
 .skills-section {
-    background: url(./img/pic2.jpeg) no-repeat right;
+    background: url(./img/pic2.jpeg) no-repeat left;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
@@ -292,15 +230,15 @@ nav #menu li a:hover {
 }
 .skills-web {
     width: 55%;
-    float: left;
-    background-color: rgb(1, 1, 1);;
+    float: right;
+    background-color: #fdfdfd;
     padding: 80px;
-    color: rgb(221, 219, 219);
+    color: black;
     
 }
 .skills-bar {
     width: 90%;
-    background-color: rgba(255, 255, 255, 0.19);
+    background-color: rgba(19, 18, 18, 0.19);
     margin-bottom: 20px;
     height: 1.5vh;
     border-radius: 15px;
@@ -314,40 +252,15 @@ nav #menu li a:hover {
 .skills-cs{height:1.5vh;width: 98%;background-color: rgb(70, 219, 207);border-radius: 15px;}
 .skills-sql{height:1.5vh;width: 76%;background-color: rgb(70, 219, 95);border-radius: 15px;}
 .skills-fb{height:1.5vh;width: 85%;background-color: rgb(219, 172, 70);border-radius: 15px;}
-@media screen and (max-width:1200px){
-    .skills-web{
-        padding: 80px;
-    }
-}
+.skills-po{height:1.5vh;width: 99%;background-color: rgb(219, 70, 70);border-radius: 15px;}
 
-@media screen and (max-width:1000px){
-    .skills-section{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    .skills-web{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .skills-section{
-        padding: 0;
-    }
-    .skills-web{
-        padding: 60px;
-    }
-    
-    
-    
-}
 
 /*----------------------------education section----------------*/
 
 /*----------------------------contact me-----------------------*/
 
 .contact-section{
-    background: #313840;
+    background: black;
     padding: 80px 0;
     text-align: center;
 }
@@ -360,37 +273,12 @@ nav #menu li a:hover {
 
 .contact-section h1 {
     font-size: 20px;
-    color: #888;
+    color: white;
     margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 400;
 }
-
-.nameClient,.emailClient,.messageClient{
-    background: none;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid;
-    color: #888;
-    padding: 10px 6px;
-}
-
-.nameClient{
-    float: left;
-    width: 270px;
-}
-
-.emailClient {
-    float: right;
-    width: 270px;
-}
-
-.messageClient {
-    min-width: 100%;
-    max-width: 100%;
-}
-
 .contact-section button{
     background: none;
     color: #70a1ff;
@@ -408,9 +296,141 @@ nav #menu li a:hover {
     color: #fff;
 }
 
-@media screen and (max-width:600px){
-    .nameClient, .emailClient{
+/*-------------------------------------pokemon api sections------------------------*/
+   
+.poke-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-between;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.pokemon {
+	background-color: #eee;
+	border-radius: 20px;
+	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+	margin: 10px;
+	padding: 20px;
+    text-align: center;
+    
+}
+
+.pokemon .img-container {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+}
+
+.pokemon .img-container img {
+	margin-top: 20px;
+	max-width: 90%;
+}
+
+.pokemon .info {
+	margin-top: 20px;
+}
+
+.pokemon .number {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	font-size: 0.8em;
+	padding: 5px 10px;
+}
+
+.pokemon .name {
+	margin: 15px 0 7px;
+	letter-spacing: 1px;
+}
+
+
+/*-----------------------------------pokemon api ends here-------------------------*/
+
+
+/*-----------------------------------responsive aspects----------------------------*/
+
+
+@media(max-width: 768px) {
+    #toggle {
+          visibility: visible;
+          opacity: 1;
+          margin-top: 6px;
+          margin-right: 4px;
+    }
+
+    nav #brand {
+          margin-left: 24px;
+    }
+
+    #menu a {
+          font-size: 20px;
+          font-weight: 300;
+    }
+
+    #resize li span {
+          font-weight: bolder;
+    }
+
+    nav #menu {
+          display: none;
+    }
+    
+}
+
+@media(min-width: 769px) {
+    #resize {
+          visibility: hidden !important;
+    }
+    .hero-text h3 {
+        font-size: 2.5vh;
+    }
+    
+}
+
+@media screen and (max-width:1200px){
+    .skills-web{
+        padding: 80px;
+    }
+    .inner-container-right{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .skills-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .skills-web{
+        width: 100%;
+    }
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container-right{
         width: 100%;
     }
 }
+
+@media screen and (max-width:600px){
+    .skills-section{
+        padding: 0;
+    }
+    .skills-web{
+        padding: 60px;
+    }
+    .about-section{
+        padding: 0;
+    }
+    .inner-container-right{
+        padding: 60px;
+    }
+}
+
+
+
 

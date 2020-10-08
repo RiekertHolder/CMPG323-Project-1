@@ -184,25 +184,36 @@
                         <div class="skills-fb"></div>
                     </div>
                 </div>
+                
+                <div class="skills-type">
+                    <h5>Pokemon</h5>
+                    <div class="skills-bar">
+                        <div class="skills-po"></div>
+                    </div>
+                </div>
+                
+                <h6 style="text-align: center;">My Favorite Pokemon</h6>
+                <div id="poke_container" class="poke-container"></div>
+                
+
             </div>
         </div>
         
         <div class="contact-section">
-            <form id="contact-form" method="post" action="contactForm.php">
+            <form id="contact-form" method="get" action="mailto:riekertswem@gmail.com">
             <div class="inner-width">
                 <h1>
                     Get in Touch with me.
-                </h1>
-                <input name="name" type="text" class="nameClient" placeholder="Your Name">
-                <input name="email" type="email" class="emailClient" placeholder="Your email">
-                <textarea name="message" rows="1" placeholder="Message" class="messageClient"></textarea>
-                <button type="submit">Get in Touch</button>
+                </h1> <button type="submit">Get in Touch</button>
+                <br>
+                <a href="./assets/resume.pdf" download="decode">Download my CV</a>
             </div>
         </div>
 
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="navbar.js"></script>
+        <script src="pokedex.js"></script>
         
     </body>
 </html>
