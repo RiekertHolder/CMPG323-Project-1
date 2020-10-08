@@ -10,7 +10,7 @@ html, body {
 /*------------------navbar styling starts here-----------  */
 nav {
     width: 100%;
-    background: transparent;
+    background: black;
     height: 80px;
     position: fixed;
     z-index: 1;
@@ -307,9 +307,13 @@ nav #menu li a:hover {
 }
 .skills-html{height:1.5vh;width: 95%;background-color: rgb(70, 70, 219);border-radius: 15px;}
 .skills-css{height:1.5vh;width: 91%;background-color: rgb(23, 138, 48);border-radius: 15px;}
-.skills-js{height:1.5vh;width: 84%;background-color: rgb(204, 219, 70);border-radius: 15px;}
-
-
+.skills-js{height:1.5vh;width: 84%;background-color: rgb(219, 70, 83);border-radius: 15px;}
+.skills-rn{height:1.5vh;width: 94%;background-color: rgb(218, 235, 64);border-radius: 15px;}
+.skills-py{height:1.5vh;width: 80%;background-color: rgb(219, 142, 70);border-radius: 15px;}
+.skills-java{height:1.5vh;width: 95%;background-color: rgb(172, 70, 219);border-radius: 15px;}
+.skills-cs{height:1.5vh;width: 98%;background-color: rgb(70, 219, 207);border-radius: 15px;}
+.skills-sql{height:1.5vh;width: 76%;background-color: rgb(70, 219, 95);border-radius: 15px;}
+.skills-fb{height:1.5vh;width: 85%;background-color: rgb(219, 172, 70);border-radius: 15px;}
 @media screen and (max-width:1200px){
     .skills-web{
         padding: 80px;
@@ -339,4 +343,74 @@ nav #menu li a:hover {
 }
 
 /*----------------------------education section----------------*/
+
+/*----------------------------contact me-----------------------*/
+
+.contact-section{
+    background: #313840;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.inner-width{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.contact-section h1 {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.nameClient,.emailClient,.messageClient{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: #888;
+    padding: 10px 6px;
+}
+
+.nameClient{
+    float: left;
+    width: 270px;
+}
+
+.emailClient {
+    float: right;
+    width: 270px;
+}
+
+.messageClient {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.contact-section button{
+    background: none;
+    color: #70a1ff;
+    border: 1px solid #70a1ff;
+    padding: 12px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.4s linear;
+    margin-top: 30px;
+}
+
+.contact-section button:hover{
+    background: #70a1ff;
+    color: #fff;
+}
+
+@media screen and (max-width:600px){
+    .nameClient, .emailClient{
+        width: 100%;
+    }
+}
 
