@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html class="no-js"> <!--<![endif]-->
+    <html> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,12 +17,20 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="navbar.js"></script>
 
-      <!-- google fonts -->
-      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
         
     </head>
+
     <body>
+
+        <!--loader animation-->
+        <div id="loader">
+            <img src="./img/loader.gif" width="30%">
+        </div>
+
+        <!--navbar-->
         <nav>
             <span id="brand">
                 <a href="index.html">riekertholder</a>
@@ -52,7 +60,7 @@
             
         </div>
 
-        <!--hero section starts here-->
+        <!--hero section-->
         <div class="hero-wrapper" id="home">
             <div class="hero-text">
                 <h3>Hi, Im Riekert Holder<br>a Computer Science Graduate</h3>
@@ -60,6 +68,8 @@
                 <a id="hero-links" href="https://github.com/RiekertHolder/CMPG323-Project-1" >Github</a>
             </div>
         </div>
+
+        <!--about me section-->
         <div class="about-section" id="am">
             <div class="inner-container-right">
                 <h1 class="section-heading">ABOUT ME</h1>
@@ -100,6 +110,8 @@
             </div>
         </div>
 
+
+        <!--education system-->
         <div class="education-section">
             <div class="inner-container-right">
                 <h1 class="section-heading">EDUCATION</h1>
@@ -149,7 +161,7 @@
             </div>
         </div>
         
-
+        <!--my skills section-->
         <div class="skills-section">
             <div class="skills-web">
                 <h1 class="section-heading">MY SKILLS</h1>
@@ -230,6 +242,7 @@
             </div>
         </div>
 
+        <!--youtube api video-->
         <div class="video-section">
             <div class="vid-container">
                 <h6>Podcast</h6>
@@ -244,6 +257,7 @@
             </div>
         </div>
         
+        <!--contact me section-->
         <div class="contact-section" id="ctc">
             <form id="contact-form" method="get" action="mailto:riekertswem@gmail.com">
             <div class="inner-width">
@@ -259,8 +273,8 @@
 
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src="navbar.js"></script>
-        <script src="pokedex.js"></script>
-        
+        <script src="js/navbar.js"></script>
+        <script src="js/pokedex.js"></script>
+        <script src="js/loader.js"></script>
     </body>
 </html>
